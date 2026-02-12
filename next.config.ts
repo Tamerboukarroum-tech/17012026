@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: '/17012026',
+  assetPrefix: '/17012026',
 };
 
 export default nextConfig;
