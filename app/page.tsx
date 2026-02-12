@@ -2,6 +2,9 @@
 
 import { useState, useRef } from 'react';
 
+// Base path for GitHub Pages
+const basePath = '/17012026';
+
 // Audio Player Component
 function AudioPlayer({ title, duration = "4:34", audioSrc }: { title: string; duration?: string; audioSrc?: string }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -106,7 +109,7 @@ export default function StoryPage() {
         <p className="subtitle">For Her, By Him</p>
         
         <div className="hero-audio">
-          <AudioPlayer title="Our Song" duration="4:23" audioSrc="/audio/song.mp3" />
+          <AudioPlayer title="Our Song" duration="4:23" audioSrc={`${basePath}/audio/song.mp3`} />
         </div>
 
         <div className="brand">Ossotna</div>
@@ -117,7 +120,7 @@ export default function StoryPage() {
         <h2 className="section-title">Author&apos;s Note</h2>
         
         <div className="image-container authors-note">
-          <img src="/images/authors-note.jpg" alt="Author's Note" />
+          <img src={`${basePath}/images/authors-note.jpg`} alt="Author's Note" />
         </div>
 
         <div className="text-content">
@@ -138,27 +141,27 @@ A small archive of something endlessly meaningful — a piece of us, gently capt
         
         <div className="image-grid">
           <div className="image-grid-track">
-            <img src="/images/prologue-1.jpg" alt="Prologue moment 1" />
-            <img src="/images/prologue-2.jpg" alt="Prologue moment 2" />
-            <img src="/images/prologue-3.jpg" alt="Prologue moment 3" />
-            <img src="/images/prologue-4.jpg" alt="Prologue moment 4" />
-            <img src="/images/prologue-5.jpg" alt="Prologue moment 5" />
-            <img src="/images/prologue-6.jpg" alt="Prologue moment 6" />
-            <img src="/images/prologue-7.jpg" alt="Prologue moment 7" />
-            <img src="/images/prologue-8.jpg" alt="Prologue moment 8" />
-            <img src="/images/prologue-9.jpg" alt="Prologue moment 9" />
-            <img src="/images/prologue-10.jpg" alt="Prologue moment 10" />
+            <img src={`${basePath}/images/prologue-1.jpg`} alt="Prologue moment 1" />
+            <img src={`${basePath}/images/prologue-2.jpg`} alt="Prologue moment 2" />
+            <img src={`${basePath}/images/prologue-3.jpg`} alt="Prologue moment 3" />
+            <img src={`${basePath}/images/prologue-4.jpg`} alt="Prologue moment 4" />
+            <img src={`${basePath}/images/prologue-5.jpg`} alt="Prologue moment 5" />
+            <img src={`${basePath}/images/prologue-6.jpg`} alt="Prologue moment 6" />
+            <img src={`${basePath}/images/prologue-7.jpg`} alt="Prologue moment 7" />
+            <img src={`${basePath}/images/prologue-8.jpg`} alt="Prologue moment 8" />
+            <img src={`${basePath}/images/prologue-9.jpg`} alt="Prologue moment 9" />
+            <img src={`${basePath}/images/prologue-10.jpg`} alt="Prologue moment 10" />
             {/* Duplicate for seamless loop */}
-            <img src="/images/prologue-1.jpg" alt="Prologue moment 1" />
-            <img src="/images/prologue-2.jpg" alt="Prologue moment 2" />
-            <img src="/images/prologue-3.jpg" alt="Prologue moment 3" />
-            <img src="/images/prologue-4.jpg" alt="Prologue moment 4" />
-            <img src="/images/prologue-5.jpg" alt="Prologue moment 5" />
-            <img src="/images/prologue-6.jpg" alt="Prologue moment 6" />
-            <img src="/images/prologue-7.jpg" alt="Prologue moment 7" />
-            <img src="/images/prologue-8.jpg" alt="Prologue moment 8" />
-            <img src="/images/prologue-9.jpg" alt="Prologue moment 9" />
-            <img src="/images/prologue-10.jpg" alt="Prologue moment 10" />
+            <img src={`${basePath}/images/prologue-1.jpg`} alt="Prologue moment 1" />
+            <img src={`${basePath}/images/prologue-2.jpg`} alt="Prologue moment 2" />
+            <img src={`${basePath}/images/prologue-3.jpg`} alt="Prologue moment 3" />
+            <img src={`${basePath}/images/prologue-4.jpg`} alt="Prologue moment 4" />
+            <img src={`${basePath}/images/prologue-5.jpg`} alt="Prologue moment 5" />
+            <img src={`${basePath}/images/prologue-6.jpg`} alt="Prologue moment 6" />
+            <img src={`${basePath}/images/prologue-7.jpg`} alt="Prologue moment 7" />
+            <img src={`${basePath}/images/prologue-8.jpg`} alt="Prologue moment 8" />
+            <img src={`${basePath}/images/prologue-9.jpg`} alt="Prologue moment 9" />
+            <img src={`${basePath}/images/prologue-10.jpg`} alt="Prologue moment 10" />
           </div>
         </div>
       </section>
@@ -169,7 +172,7 @@ A small archive of something endlessly meaningful — a piece of us, gently capt
         <h3 className="section-subtitle">The Annoyance Phase</h3>
         
         <div className="image-container large">
-          <img src="/images/chapter1.jpg" alt="Chapter 1" />
+          <img src={`${basePath}/images/chapter1.jpg`} alt="Chapter 1" />
         </div>
 
         <div className="text-content">
@@ -190,7 +193,7 @@ And without either of them realizing it, that was the very beginning.
         <h3 className="section-subtitle">The Broken Pinky</h3>
         
         <div className="image-container large">
-          <img src="/images/chapter2.jpg" alt="Chapter 2" />
+          <img src={`${basePath}/images/chapter2.jpg`} alt="Chapter 2" />
         </div>
 
         <div className="text-content">
@@ -212,7 +215,7 @@ But that tiny broken pinky was quietly about to change everything.
         <h3 className="section-subtitle">A Convenient Excuse</h3>
         
         <div className="image-container large">
-          <img src="/images/chapter3.jpg" alt="Chapter 3" />
+          <img src={`${basePath}/images/chapter3.jpg`} alt="Chapter 3" />
         </div>
 
         <div className="text-content">
@@ -240,7 +243,7 @@ But the walks, the lunches, and the rides never stopped.
         <h3 className="section-subtitle">Denial</h3>
         
         <div className="image-container large">
-          <img src="/images/chapter4.jpg" alt="Chapter 4" />
+          <img src={`${basePath}/images/chapter4.jpg`} alt="Chapter 4" />
         </div>
 
         <div className="text-content">
@@ -260,7 +263,7 @@ Eventually, it became impossible to ignore. No matter how much she wanted to sta
         <h3 className="section-subtitle">The Dinner</h3>
         
         <div className="image-container large">
-          <img src="/images/chapter5.jpg" alt="Chapter 5" />
+          <img src={`${basePath}/images/chapter5.jpg`} alt="Chapter 5" />
         </div>
 
         <div className="text-content">
