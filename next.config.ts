@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/ossotna-clone',
+  basePath: '/17012026',
 };
 
 export default nextConfig;
